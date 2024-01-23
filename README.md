@@ -83,7 +83,7 @@ Customer ||--|| Summary : "amount"
 |F_price | int | () | |
 |Cata_Food | char | () | FK |
 
-### Fresh_Food
+### Finished_Food
 | Field | Type | Domain | Key |
 | ---   |  --- |  ---   | --- |
 |Fname | char | () | FK |
