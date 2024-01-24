@@ -14,22 +14,8 @@ import random
 # Create your views here.
 
 def homepage (request):
-    product = models.Product.objects.all()
-    beer = models.Category.objects.get(name ='เบียร์')
-    product_beer = models.Product.objects.filter(category=beer)
-    spirits = models.Category.objects.get(name ='เหล้า')
-    product_spirits = models.Product.objects.filter(category=spirits)
-    snacks = models.Category.objects.get(name ='อาหาร')
-    product_snacks = models.Product.objects.filter(category=snacks)
-    mixer = models.Category.objects.get(name ='มิกซ์')
-    product_mixer = models.Product.objects.filter(category=mixer)
-    return render (request,"index.html", {
-        "products":product,
-        "beer":product_beer,
-        "spirits":product_spirits,
-        "snacks":product_snacks,
-        "mixer":product_mixer,
-    })
+    
+    return render (request,"index.html")
 
 
 def about (request):
